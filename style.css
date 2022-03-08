@@ -1,0 +1,98 @@
+@import "reset.css";
+
+.border {
+    border: 1px solid #000 !important;
+}
+
+body {
+    background-color: #f6f9fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.canvas {
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-right: 40px;
+}
+.controls {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.controls .controls__btns {
+    width: 230px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls .controls__btns button {
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 0;
+    width: 80px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.controls .controls__btns div {
+    width: 26px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+}
+.controls .controls__btns button:active {
+    transform: scale(0.98);
+}
+.controls .controls__colors{
+    display: flex;
+}
+.controls__colors .controls__color {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 4px;
+    transition: all .4s;
+}
+.colorPic {
+    outline: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 56px;
+    height: 58px;
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+.colorPic::-webkit-color-swatch {
+    border: none;
+    border-radius: 40%;
+    padding: 0;
+}
+.controls__colors .controls__color:hover {
+    transform: scale(1.1);
+}
+.controls .controls__range {
+    margin-bottom: 30px;
+}
